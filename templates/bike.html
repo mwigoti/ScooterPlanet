@@ -19,15 +19,16 @@
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
 						<div class="logo">
-							Re-No
+							Chloro-move
 						</div>
 						<nav class="main_nav">
+							<h3>hello , {{ user.first_name }}</h3>
 							<ul>
 								<li class="active"><a href="/">Home</a></li>
 								<li><a href="/About">About us</a></li>
 								<li><a href="/bikes">bikes</a></li>
                                 {% if user.is_authenticated %}
-                                <li><strong>hello , {{ user.first_name }} !</strong></li>
+                               
                                      <li><a href="/cart">cart</a></li>
                                     <li><a href="/logout">logout</a></li>
                                 {% else %}
